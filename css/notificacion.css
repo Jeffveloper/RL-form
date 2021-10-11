@@ -1,0 +1,26 @@
+.cont-notif{
+    width: 100%;
+    /* max-width: 50%; */
+
+    background-color: rgba(62, 163, 62, 0.856);
+    /* position: absolute; */
+    
+    display: flex;
+    justify-content: flex-end;
+
+}
+.notif-img{
+    position: fixed;
+    margin: 3rem 0 0 0;
+    max-width: 5rem;
+}
+@media (min-width: 768px){
+    .notif-img{
+        margin: 3rem 0 0 1rem;
+    }
+}
+@media (min-width: 1024px){
+    .notif-img{
+        margin: 3rem 0 0 0;
+    }
+}

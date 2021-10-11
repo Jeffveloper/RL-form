@@ -1,0 +1,64 @@
+#survey-form{
+background-color: rgba(255, 2555, 255, 0.2);
+padding: 4rem 2rem;
+display: flex;
+flex-direction: column;
+gap: 3.5rem;
+width: auto;
+border-radius:0.7rem ;
+}
+.form-group{
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+.form-control{
+border: none;
+padding: 1.5rem;
+border-radius: 0.7rem;
+margin: 0;
+}
+.info {
+font-weight: 500;
+}
+.lista{
+    gap: 2rem;
+}
+input{
+    margin-right: 2rem;
+}
+.form-group textarea{
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    display: inline-block;
+    min-height: 15rem;
+    overflow-y: scroll;
+    resize: none;
+}
+.submit-button{
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+}
+/* reponsive */
+@media (min-width: 768px) {
+    #survey-form{
+        padding: 4rem 3rem;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .form-control{
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+    }
+    .form-group textarea{
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        min-height: 10rem;
+    }
+    .submit-button{
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/notificacion.css">
+    <!-- logo -->
+    <link rel="icon" href="https://rocketleague.media.zestyio.com/rl_s1_avatar_196.png">
+    <title>RL survey form</title>
+</head>
+
+<body>
+    <main class="main-cont">
+        <div class="bg">
+            <div class="blur"></div>
+        </div>
+        <div class="cont">
+
+            <header id="header">
+                <h1 id="tittle">Rocket League survey form</h1>
+                <h3 id="description">Thank you for taking the time to help us improve the game</h3>
+            </header>
+            <form id="survey-form">
+
+                <div class="form-group">
+                    <label class="info" id="name-label" for="name">User ID</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your User ID"
+                        required />
+                </div>
+
+                <div class="form-group">
+                    <label class="info" id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                        required />
+                </div>
+
+                <div class="form-group">
+                    <label class="info" id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                        placeholder="Age" />
+                </div>
+
+                <div class="form-group">
+                    <p class="info">What is your rank in Rocket League?</p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Bronze</option>
+                        <option value="projects">Silver</option>
+                        <option value="community">Gold</option>
+                        <option value="openSource">Platinum</option>
+                        <option value="openSource">Diamond</option>
+                        <option value="openSource">Champion</option>
+                        <option value="openSource">Grand champion</option>
+                        <option value="openSource">Supersonic Legend</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p class="info">Which option best describes your playstyle?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>select an option</option>
+                        <option value="casual">casual player</option>
+                        <option value="mechanic_player">Mechanic player</option>
+                        <option value="freestyler">Freestyler</option>
+                        <option value="ballchaser">Ballchaser</option>
+                        <option value="preferNo">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p class="info">Would you recommend Rocket League to a friend?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio lista"
+                            checked />Definitely</label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
+                        sure</label>
+                    <label>
+                        <input name="user-recommend" value="never" type="radio" class="input-radio" />Never</label>
+                </div>
+
+                <div class="form-group">
+                    <p class="info">What would you like to improve in game?</p>
+
+                    <label>
+                        <input name="prefer" value="Rotations" type="checkbox"
+                            class="input-checkbox" />Rotations</label>
+                    <label>
+                        <input name="prefer" value="Aerials" type="checkbox" class="input-checkbox" />Aerials</label>
+                    <label>
+                        <input name="prefer" value="Ground control" type="checkbox" class="input-checkbox" />Ground
+                        control</label>
+                    <label>
+                        <input name="prefer" value="Air control" type="checkbox" class="input-checkbox" />Air
+                        control</label>
+                    <label>
+                        <input name="prefer" value="50/50" type="checkbox" class="input-checkbox" />50/50</label>
+                    <label>
+                        <input name="prefer" value="Defense" type="checkbox" class="input-checkbox" />Defense</label>
+                    <label>
+                        <input name="prefer" value="Attack" type="checkbox" class="input-checkbox" />Attack</label>
+                </div>
+
+                <div class="form-group">
+                    <p class="info">Any comments or suggestions about the game?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button" onclick="inicarApp();">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

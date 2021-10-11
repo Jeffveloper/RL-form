@@ -1,0 +1,13 @@
+#header{
+    /* background-color: rgba(255, 2555, 255, 0.5); */
+    text-align: center;
+    padding: 4rem 2rem;
+}
+#tittle{
+    font: var(--f1);
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+#description{
+    font: var(--f2);    
+}
